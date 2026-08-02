@@ -1,0 +1,23 @@
+# Netlify build configuration for the YourBrand landing page.
+# The SPA redirect rules live in public/_redirects (copied to dist/ by Vite).
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Vite 8 / React 19 / TypeScript 6 require a recent Node LTS.
+[build.environment]
+  NODE_VERSION = "22"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+# Long-cache fingerprinted Vite assets.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Don't cache the SPA shell (index.html) so new deploys are picked up.
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
