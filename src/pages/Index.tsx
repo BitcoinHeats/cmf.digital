@@ -1,23 +1,34 @@
 import { useSeoMeta } from '@unhead/react';
-
-// FIXME: Update this page (the content is just a fallback if you fail to update the page)
+import { Navbar } from '@/components/landing/Navbar';
+import { Hero } from '@/components/landing/Hero';
+import { Features } from '@/components/landing/Features';
+import { HowItWorks } from '@/components/landing/HowItWorks';
+import { FAQ } from '@/components/landing/FAQ';
+import { CTA } from '@/components/landing/CTA';
+import { Footer } from '@/components/landing/Footer';
 
 const Index = () => {
   useSeoMeta({
-    title: 'Welcome to Your Blank App',
-    description: 'A modern Nostr client application built with React, TailwindCSS, and Nostrify.',
+    title: 'YourBrand — Build Something Modern',
+    description:
+      'A clean, fast, responsive starting point for your new domain. Ship your next idea without the boilerplate.',
+    ogTitle: 'YourBrand — Build Something Modern',
+    ogDescription:
+      'A clean, fast, responsive starting point for your new domain. Ship your next idea without the boilerplate.',
+    ogType: 'website',
   });
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-          Welcome to Your Blank App
-        </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400">
-          Start building your amazing project here!
-        </p>
-      </div>
+    <div className="min-h-screen bg-background text-foreground antialiased">
+      <Navbar />
+      <main>
+        <Hero />
+        <Features />
+        <HowItWorks />
+        <FAQ />
+        <CTA />
+      </main>
+      <Footer />
     </div>
   );
 };
