@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="85%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(96 110)">
+    <rect width="84" height="84" rx="22" fill="url(#brand)"/>
+    <path d="M50 18 L26 56 H44 L40 72 L60 38 H44 Z" fill="#ffffff"/>
+  </g>
+  <text x="200" y="172" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#f1f5f9">YourBrand</text>
+
+  <!-- Headline -->
+  <text x="96" y="330" font-family="Inter, system-ui, sans-serif" font-size="86" font-weight="800" fill="#f1f5f9">Build Something</text>
+  <text x="96" y="420" font-family="Inter, system-ui, sans-serif" font-size="86" font-weight="800" fill="url(#brand)">Modern</text>
+
+  <!-- Subtitle -->
+  <text x="96" y="478" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="400" fill="#94a3b8">A clean, fast, responsive starting point for your next idea.</text>
+
+  <!-- URL chip -->
+  <g transform="translate(96 520)">
+    <rect width="232" height="52" rx="26" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="30" cy="26" r="6" fill="#06b6d4"/>
+    <text x="50" y="34" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="600" fill="#e2e8f0">1of1.digital</text>
+  </g>
+</svg>

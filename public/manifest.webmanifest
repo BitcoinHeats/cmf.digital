@@ -1,0 +1,17 @@
+{
+  "name": "YourBrand — Build Something Modern",
+  "short_name": "YourBrand",
+  "description": "A clean, fast, responsive starting point for your next idea.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
