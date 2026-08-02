@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Menu, Zap } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { LoginArea } from '@/components/auth/LoginArea';
 import { ThemeToggle } from './ThemeToggle';
+import { BrandMark } from './BrandMark';
 import {
   Sheet,
   SheetContent,
@@ -25,12 +26,10 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand */}
-        <Link to="/" className="group flex items-center gap-2" aria-label="YourBrand home">
-          <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 text-white shadow-lg shadow-indigo-500/30 transition-transform group-hover:scale-105">
-            <Zap className="size-5" />
-          </span>
+        <Link to="/" className="group flex items-center gap-2" aria-label="1of1 home">
+          <BrandMark className="size-8 text-sm transition-transform group-hover:scale-105" />
           <span className="bg-gradient-to-br from-indigo-500 to-cyan-400 bg-clip-text text-lg font-bold text-transparent">
-            YourBrand
+            1of1
           </span>
         </Link>
 
@@ -70,10 +69,8 @@ export function Navbar() {
             <SheetContent side="right" className="w-72">
               <SheetTitle className="px-4 pt-4 text-base">
                 <span className="flex items-center gap-2">
-                  <span className="flex size-7 items-center justify-center rounded-md bg-gradient-to-br from-indigo-500 to-cyan-400 text-white">
-                    <Zap className="size-4" />
-                  </span>
-                  YourBrand
+                  <BrandMark className="size-7 text-xs" />
+                  1of1
                 </span>
               </SheetTitle>
               <nav className="flex flex-col gap-1 px-2">

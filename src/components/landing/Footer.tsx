@@ -1,5 +1,6 @@
-import { Heart, Zap } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { BrandMark } from './BrandMark';
 
 /** GitHub mark (lucide dropped brand icons, so we inline the logo). */
 function GithubMark({ className }: { className?: string }) {
@@ -53,17 +54,15 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.5fr_repeat(3,1fr)]">
           {/* Brand */}
           <div className="max-w-xs">
-            <Link to="/" className="flex items-center gap-2" aria-label="YourBrand home">
-              <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 text-white">
-                <Zap className="size-5" />
-              </span>
+            <Link to="/" className="flex items-center gap-2" aria-label="1of1 home">
+              <BrandMark className="size-8 text-sm" />
               <span className="bg-gradient-to-br from-indigo-500 to-cyan-400 bg-clip-text text-lg font-bold text-transparent">
-                YourBrand
+                1of1
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              A clean, modern starting point for your next idea. Fast, responsive,
-              and ready to customize.
+              A clean, fast, responsive starting point for ideas that refuse to be
+              a copy. Build something unmistakably yours.
             </p>
             <div className="mt-5 flex items-center gap-3">
               <a
@@ -105,7 +104,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/60 pt-6 sm:flex-row">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} YourBrand. All rights reserved.
+            © {new Date().getFullYear()} 1of1. All rights reserved.
           </p>
           <a
             href="https://shakespeare.diy"

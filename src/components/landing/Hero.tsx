@@ -38,15 +38,15 @@ export function Hero() {
         </div>
 
         <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-6xl">
-          Build Something{' '}
+          Build something{' '}
           <span className="bg-gradient-to-br from-indigo-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
-            Modern
+            one of one
           </span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground sm:text-xl">
-          A clean starting point for your new domain. Fast, responsive, and ready to
-          customize — ship your next idea without the boilerplate.
+          A clean, fast, responsive starting point for ideas that refuse to be a
+          copy. Ship something unmistakably yours — without the boilerplate.
         </p>
 
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -92,7 +92,7 @@ function HeroPreview() {
           <span className="size-3 rounded-full bg-amber-400/80" />
           <span className="size-3 rounded-full bg-green-400/80" />
           <span className="ml-3 hidden h-6 flex-1 items-center rounded-md bg-background/60 px-3 text-xs text-muted-foreground sm:flex">
-            yourbrand.com
+            1of1.digital
           </span>
         </div>
         {/* Faux content */}

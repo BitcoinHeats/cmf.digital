@@ -9,22 +9,22 @@ import { Footer } from '@/components/landing/Footer';
 
 const Index = () => {
   useSeoMeta({
-    title: 'YourBrand — Build Something Modern',
+    title: '1of1 — Build Something One of One',
     description:
-      'A clean, fast, responsive starting point for your new domain. Ship your next idea without the boilerplate.',
-    ogTitle: 'YourBrand — Build Something Modern',
+      'A clean, fast, responsive starting point for ideas that refuse to be a copy. Ship something unmistakably yours.',
+    ogTitle: '1of1 — Build Something One of One',
     ogDescription:
-      'A clean, fast, responsive starting point for your new domain. Ship your next idea without the boilerplate.',
+      'A clean, fast, responsive starting point for ideas that refuse to be a copy. Ship something unmistakably yours.',
     ogType: 'website',
     ogUrl: 'https://1of1.digital/',
-    ogSiteName: 'YourBrand',
-    ogImage: 'https://blossom.ditto.pub/7a04b59d9b0d0d27f6c55dc4b1f5fa6003947b53d58ee3debfd669f9a561a92a.svg',
-    ogImageAlt: 'YourBrand — Build Something Modern',
+    ogSiteName: '1of1',
+    ogImage: 'https://blossom.ditto.pub/e71d9a4f904caa603a3046c389982a32d6e2c858a5a2dbc00c76bcddffb0d37b.svg',
+    ogImageAlt: '1of1 — Build Something One of One',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'YourBrand — Build Something Modern',
+    twitterTitle: '1of1 — Build Something One of One',
     twitterDescription:
-      'A clean, fast, responsive starting point for your new domain. Ship your next idea without the boilerplate.',
-    twitterImage: 'https://blossom.ditto.pub/7a04b59d9b0d0d27f6c55dc4b1f5fa6003947b53d58ee3debfd669f9a561a92a.svg',
+      'A clean, fast, responsive starting point for ideas that refuse to be a copy. Ship something unmistakably yours.',
+    twitterImage: 'https://blossom.ditto.pub/e71d9a4f904caa603a3046c389982a32d6e2c858a5a2dbc00c76bcddffb0d37b.svg',
   });
 
   return (

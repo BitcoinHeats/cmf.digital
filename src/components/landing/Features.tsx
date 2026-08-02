@@ -56,8 +56,8 @@ export function Features() {
           Everything you need to launch
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Thoughtful defaults and a polished foundation, so you spend time on your
-          product — not your scaffold.
+          Thoughtful defaults and a polished foundation, so you spend time on what
+          makes your idea one of one — not your scaffold.
         </p>
       </div>
 

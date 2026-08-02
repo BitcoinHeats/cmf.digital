@@ -16,11 +16,11 @@ export function CTA() {
 
         <div className="relative">
           <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-            Ready to build something modern?
+            Ready to build something one of one?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-indigo-100 sm:text-lg">
-            Grab the template, make it yours, and ship today. No setup headaches,
-            no boilerplate — just a clean canvas for your next idea.
+            Grab the template, make it unmistakably yours, and ship today. No setup
+            headaches, no boilerplate — just a clean canvas for an idea like no other.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a

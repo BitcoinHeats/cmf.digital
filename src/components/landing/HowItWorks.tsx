@@ -13,7 +13,7 @@ const STEPS: Step[] = [
     step: '01',
     title: 'Describe your idea',
     description:
-      'Start from a clean, modern template and shape the copy, colors, and layout to match your vision.',
+      'Start from a clean, modern template and shape the copy, colors, and layout to match a vision like no other.',
   },
   {
     icon: Wand2,
