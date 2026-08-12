@@ -3,7 +3,7 @@ import { Menu } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { LoginArea } from '@/components/auth/LoginArea';
 import { ThemeToggle } from './ThemeToggle';
-import { BrandMark } from './BrandMark';
+import { BrandWordmark, BrandMark } from './BrandMark';
 import {
   Sheet,
   SheetContent,
@@ -15,8 +15,9 @@ import { cn } from '@/lib/utils';
 
 const NAV_LINKS = [
   { label: 'Features', href: '#features' },
-  { label: 'How it works', href: '#how-it-works' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'Why CMF', href: '#why-cmf' },
+  { label: 'Treasury', href: '#treasury' },
+  { label: 'Results', href: '#results' },
 ] as const;
 
 export function Navbar() {
@@ -26,15 +27,12 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand */}
-        <Link to="/" className="group flex items-center gap-2" aria-label="1of1 home">
-          <BrandMark className="size-8 text-sm transition-transform group-hover:scale-105" />
-          <span className="bg-gradient-to-br from-indigo-500 to-cyan-400 bg-clip-text text-lg font-bold text-transparent">
-            1of1
-          </span>
+        <Link to="/" className="group" aria-label="CMF.digital home">
+          <BrandWordmark />
         </Link>
 
         {/* Desktop links */}
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-7 lg:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a
@@ -48,13 +46,19 @@ export function Navbar() {
         </ul>
 
         {/* Desktop actions */}
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <ThemeToggle />
-          <LoginArea className="max-w-44" />
+          <a
+            href="#consultation"
+            className="inline-flex h-9 items-center rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 px-4 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-all hover:-translate-y-0.5 hover:shadow-orange-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            Free Consultation
+          </a>
+          <LoginArea className="max-w-40" />
         </div>
 
         {/* Mobile actions */}
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -69,8 +73,10 @@ export function Navbar() {
             <SheetContent side="right" className="w-72">
               <SheetTitle className="px-4 pt-4 text-base">
                 <span className="flex items-center gap-2">
-                  <BrandMark className="size-7 text-xs" />
-                  1of1
+                  <BrandMark className="size-7" />
+                  <span className="font-bold tracking-tight text-foreground">
+                    CMF<span className="text-orange-500">.digital</span>
+                  </span>
                 </span>
               </SheetTitle>
               <nav className="flex flex-col gap-1 px-2">
@@ -87,6 +93,15 @@ export function Navbar() {
                     </a>
                   </SheetClose>
                 ))}
+                <SheetClose asChild>
+                  <a
+                    href="#consultation"
+                    onClick={() => setOpen(false)}
+                    className="mt-2 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-orange-500/30"
+                  >
+                    Free Consultation
+                  </a>
+                </SheetClose>
               </nav>
               <div className="mt-auto border-t border-border/60 p-4">
                 <LoginArea className="w-full" />

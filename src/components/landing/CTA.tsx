@@ -1,9 +1,16 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
+
+const CONSULTATION_ITEMS = [
+  'Bottom-line analysis',
+  'Efficiency audit',
+  'Bitcoin integration assessment',
+  'Treasury optimization review',
+] as const;
 
 export function CTA() {
   return (
-    <section className="px-4 py-24 sm:px-6 lg:px-8">
-      <div className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-indigo-500/20 bg-gradient-to-br from-indigo-600 via-indigo-600 to-cyan-500 px-6 py-16 text-center shadow-2xl shadow-indigo-500/30 sm:px-12">
+    <section id="consultation" className="px-4 py-24 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-orange-500/20 bg-gradient-to-br from-orange-600 via-orange-600 to-amber-500 px-6 py-16 text-center shadow-2xl shadow-orange-500/30 sm:px-12">
         {/* Decorative glows */}
         <div
           aria-hidden
@@ -11,32 +18,39 @@ export function CTA() {
         />
         <div
           aria-hidden
-          className="pointer-events-none absolute -bottom-20 -right-10 size-72 rounded-full bg-cyan-300/20 blur-3xl"
+          className="pointer-events-none absolute -bottom-20 -right-10 size-72 rounded-full bg-amber-300/25 blur-3xl"
         />
 
         <div className="relative">
           <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-            Ready to build something one of one?
+            See what CMF can do for your bottom line.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-base text-indigo-100 sm:text-lg">
-            Grab the template, make it unmistakably yours, and ship today. No setup
-            headaches, no boilerplate — just a clean canvas for an idea like no other.
+          <p className="mx-auto mt-4 max-w-lg text-base text-orange-50 sm:text-lg">
+            A free consultation covers:
           </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a
-              href="#features"
-              className="inline-flex h-12 items-center gap-2 rounded-xl bg-white px-7 text-base font-semibold text-indigo-600 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-600"
-            >
-              Get Started
-              <ArrowRight className="size-4" />
-            </a>
-            <a
-              href="#faq"
-              className="inline-flex h-12 items-center rounded-xl border border-white/40 px-7 text-base font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-indigo-600"
-            >
-              Read the FAQ
-            </a>
-          </div>
+
+          {/* Checklist */}
+          <ul className="mx-auto mt-6 grid max-w-xl gap-3 text-left sm:grid-cols-2">
+            {CONSULTATION_ITEMS.map((item) => (
+              <li
+                key={item}
+                className="flex items-center gap-3 rounded-xl bg-white/10 px-4 py-3 backdrop-blur-sm"
+              >
+                <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-white text-orange-600">
+                  <Check className="size-4" />
+                </span>
+                <span className="text-sm font-medium text-white">{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <a
+            href="#consultation"
+            className="mt-9 inline-flex h-12 items-center gap-2 rounded-xl bg-white px-8 text-base font-semibold text-orange-600 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-orange-600"
+          >
+            Free Consultation
+            <ArrowRight className="size-4" />
+          </a>
         </div>
       </div>
     </section>

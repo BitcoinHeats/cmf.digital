@@ -1,24 +1,26 @@
 import { cn } from '@/lib/utils';
+import { BitcoinMark } from './BitcoinMark';
 
 /**
- * The 1of1 brand mark: a gradient rounded square containing a bold "1/1".
- * Reused by the Navbar and Footer so the logo stays consistent everywhere.
+ * The CMF.digital brand mark: a Bitcoin-orange gradient rounded square
+ * containing the ₿ glyph. Reused by the Navbar and Footer so the logo
+ * stays consistent everywhere.
  */
 export function BrandMark({ className }: { className?: string }) {
   return (
     <span
       aria-hidden
       className={cn(
-        'flex items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 font-extrabold leading-none text-white shadow-lg shadow-indigo-500/30',
+        'flex items-center justify-center rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-lg shadow-orange-500/30',
         className,
       )}
     >
-      1/1
+      <BitcoinMark className="size-[60%]" />
     </span>
   );
 }
 
-/** Wordmark pairing the BrandMark with the "1of1" gradient text. */
+/** Wordmark pairing the BrandMark with the "CMF.digital" gradient text. */
 export function BrandWordmark({
   className,
   markClassName,
@@ -30,14 +32,14 @@ export function BrandWordmark({
 }) {
   return (
     <span className={cn('flex items-center gap-2', className)}>
-      <BrandMark className={cn('size-8 text-sm', markClassName)} />
+      <BrandMark className={cn('size-8', markClassName)} />
       <span
         className={cn(
-          'bg-gradient-to-br from-indigo-500 to-cyan-400 bg-clip-text text-lg font-bold text-transparent',
+          'text-lg font-bold tracking-tight text-foreground',
           textClassName,
         )}
       >
-        1of1
+        CMF<span className="text-orange-500">.digital</span>
       </span>
     </span>
   );

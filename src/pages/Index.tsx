@@ -1,30 +1,29 @@
 import { useSeoMeta } from '@unhead/react';
 import { Navbar } from '@/components/landing/Navbar';
 import { Hero } from '@/components/landing/Hero';
+import { WhoWeAre } from '@/components/landing/WhoWeAre';
 import { Features } from '@/components/landing/Features';
-import { HowItWorks } from '@/components/landing/HowItWorks';
-import { FAQ } from '@/components/landing/FAQ';
+import { WhyCMF } from '@/components/landing/WhyCMF';
+import { Treasury } from '@/components/landing/Treasury';
+import { SocialProof } from '@/components/landing/SocialProof';
 import { CTA } from '@/components/landing/CTA';
 import { Footer } from '@/components/landing/Footer';
 
 const Index = () => {
   useSeoMeta({
-    title: '1of1 — Build Something One of One',
+    title: 'CMF.digital — The Future of Property Management',
     description:
-      'A clean, fast, responsive starting point for ideas that refuse to be a copy. Ship something unmistakably yours.',
-    ogTitle: '1of1 — Build Something One of One',
+      'AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in. Sovereignty over your assets, operations, and balance sheet.',
+    ogTitle: 'CMF.digital — The Future of Property Management',
     ogDescription:
-      'A clean, fast, responsive starting point for ideas that refuse to be a copy. Ship something unmistakably yours.',
+      'AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in.',
     ogType: 'website',
-    ogUrl: 'https://1of1.digital/',
-    ogSiteName: '1of1',
-    ogImage: 'https://blossom.ditto.pub/e71d9a4f904caa603a3046c389982a32d6e2c858a5a2dbc00c76bcddffb0d37b.svg',
-    ogImageAlt: '1of1 — Build Something One of One',
+    ogUrl: 'https://cmf.digital/',
+    ogSiteName: 'CMF.digital',
     twitterCard: 'summary_large_image',
-    twitterTitle: '1of1 — Build Something One of One',
+    twitterTitle: 'CMF.digital — The Future of Property Management',
     twitterDescription:
-      'A clean, fast, responsive starting point for ideas that refuse to be a copy. Ship something unmistakably yours.',
-    twitterImage: 'https://blossom.ditto.pub/e71d9a4f904caa603a3046c389982a32d6e2c858a5a2dbc00c76bcddffb0d37b.svg',
+      'AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in.',
   });
 
   return (
@@ -32,9 +31,11 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
+        <WhoWeAre />
         <Features />
-        <HowItWorks />
-        <FAQ />
+        <WhyCMF />
+        <Treasury />
+        <SocialProof />
         <CTA />
       </main>
       <Footer />
