@@ -20,10 +20,13 @@ const Index = () => {
     ogType: 'website',
     ogUrl: 'https://cmf.digital/',
     ogSiteName: 'CMF.digital',
+    ogImage: 'https://cmf.digital/og-image.svg',
+    ogImageAlt: 'CMF.digital — The Future of Property Management',
     twitterCard: 'summary_large_image',
     twitterTitle: 'CMF.digital — The Future of Property Management',
     twitterDescription:
       'AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in.',
+    twitterImage: 'https://cmf.digital/og-image.svg',
   });
 
   return (

@@ -1,4 +1,4 @@
-# Netlify build configuration for the YourBrand landing page.
+# Netlify build configuration for the CMF.digital landing page.
 # The SPA redirect rules live in public/_redirects (copied to dist/ by Vite).
 
 [build]

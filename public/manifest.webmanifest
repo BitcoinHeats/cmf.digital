@@ -1,7 +1,7 @@
 {
-  "name": "1of1 — Build Something One of One",
-  "short_name": "1of1",
-  "description": "A clean, fast, responsive starting point for ideas that refuse to be a copy.",
+  "name": "CMF.digital — The Future of Property Management",
+  "short_name": "CMF.digital",
+  "description": "AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",
