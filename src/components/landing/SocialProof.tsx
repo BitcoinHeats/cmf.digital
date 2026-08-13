@@ -1,4 +1,5 @@
 import { ArrowRight, Flame, Percent, Quote, TrendingDown, Zap } from 'lucide-react';
+import { CONSULTATION_URL } from './constants';
 
 const STATS = [
   { icon: TrendingDown, value: 'XX%', label: 'Reduction in administrative labor hours' },
@@ -72,7 +73,9 @@ export function SocialProof() {
           {CASE_STUDIES.map((cs) => (
             <a
               key={cs.title}
-              href="#consultation"
+              href={CONSULTATION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex flex-col rounded-2xl border border-dashed border-border/70 bg-card/50 p-7 transition-all hover:-translate-y-1 hover:border-orange-500/40 hover:bg-card"
             >
               <span className="text-xs font-semibold uppercase tracking-wider text-orange-500">

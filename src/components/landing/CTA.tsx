@@ -1,4 +1,5 @@
 import { ArrowRight, Check } from 'lucide-react';
+import { CONSULTATION_URL } from './constants';
 
 const CONSULTATION_ITEMS = [
   'Bottom-line analysis',
@@ -45,7 +46,9 @@ export function CTA() {
           </ul>
 
           <a
-            href="#consultation"
+            href={CONSULTATION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-9 inline-flex h-12 items-center gap-2 rounded-xl bg-white px-8 text-base font-semibold text-orange-600 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-orange-600"
           >
             Free Consultation

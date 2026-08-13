@@ -12,6 +12,7 @@ import {
   SheetClose,
 } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import { CONSULTATION_URL } from './constants';
 
 const NAV_LINKS = [
   { label: 'Features', href: '#features' },
@@ -49,7 +50,9 @@ export function Navbar() {
         <div className="hidden items-center gap-3 lg:flex">
           <ThemeToggle />
           <a
-            href="#consultation"
+            href={CONSULTATION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-9 items-center rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 px-4 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-all hover:-translate-y-0.5 hover:shadow-orange-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
             Free Consultation
@@ -95,7 +98,9 @@ export function Navbar() {
                 ))}
                 <SheetClose asChild>
                   <a
-                    href="#consultation"
+                    href={CONSULTATION_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => setOpen(false)}
                     className="mt-2 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-orange-500/30"
                   >

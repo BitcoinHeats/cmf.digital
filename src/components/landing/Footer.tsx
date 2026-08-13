@@ -2,14 +2,15 @@ import { Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { BrandMark } from './BrandMark';
 import { BitcoinMark } from './BitcoinMark';
+import { CONSULTATION_URL } from './constants';
 
-const FOOTER_NAV = [
+const FOOTER_NAV: { label: string; href: string; external?: boolean }[] = [
   { label: 'Features', href: '#features' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'Why Bitcoin', href: '#treasury' },
   { label: 'Why AI', href: '#why-cmf' },
-  { label: 'Free Consultation', href: '#consultation' },
-] as const;
+  { label: 'Free Consultation', href: CONSULTATION_URL, external: true },
+];
 
 export function Footer() {
   return (
@@ -46,6 +47,9 @@ export function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
+                    {...(link.external
+                      ? { target: '_blank', rel: 'noopener noreferrer' }
+                      : {})}
                     className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
                   >
                     {link.label}

@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { BitcoinMark } from './BitcoinMark';
+import { CONSULTATION_URL } from './constants';
 
 const PILLARS = [
   'AI Agent Workflows',
@@ -50,7 +51,9 @@ export function Hero() {
 
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
-            href="#consultation"
+            href={CONSULTATION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-12 items-center gap-2 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 px-7 text-base font-semibold text-white shadow-lg shadow-orange-500/40 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-orange-500/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
             Free Consultation
