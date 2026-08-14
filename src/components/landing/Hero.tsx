@@ -36,12 +36,15 @@ export function Hero() {
           <span>Bitcoin + AI Property Management</span>
         </div>
 
-        <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-6xl">
-          The future of{' '}
-          <span className="bg-gradient-to-br from-amber-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-            property management.
-          </span>
+        <h1 className="mt-6 text-5xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-7xl lg:text-8xl">
+          Community Management Firm
         </h1>
+
+        <p className="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
+          <span className="bg-gradient-to-br from-amber-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
+            The future of property management.
+          </span>
+        </p>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
           AI agent workflows. Bitcoin payments. Mining for heat. Treasury
