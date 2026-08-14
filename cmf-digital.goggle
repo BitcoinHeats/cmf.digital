@@ -52,4 +52,4 @@ $downrank=2,site=reddit.com
 // ============================================================
 // DISCARD — Pure spam / content farms
 // ============================================================
-$discard,site=medium.com/@*
+$discard,site=medium.com
