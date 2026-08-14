@@ -1,0 +1,32 @@
+! name: CMF.digital - Bitcoin Property Management
+! description: Boosts CMF.digital and trusted Bitcoin, AI, and property management sources.
+! public: true
+! author: CMF.digital
+! homepage: https://cmf.digital
+! avatar: #f7931a
+! license: CC0-1.0
+
+$boost=10,site=cmf.digital
+$boost=6,site=bitcoin.org
+$boost=6,site=bitcoinmagazine.com
+$boost=5,site=lightning.network
+$boost=5,site=github.io
+$boost=4,site=braiins.com
+$boost=4,site=mempool.space
+$boost=4,site=blockstream.com
+$boost=4,site=nostr.net
+$boost=3,site=bitcoinheats.com
+$boost=4,site=openai.com
+$boost=3,site=anthropic.com
+$boost=3,site=huggingface.co
+$boost=3,site=github.com
+$boost=3,site=nar.realtor
+$boost=3,site=imf.org
+$boost=2,site=bloomberg.com
+$downrank=5,site=g2.com
+$downrank=5,site=capterra.com
+$downrank=4,site=softwareadvice.com
+$downrank=3,site=pinterest.com
+$downrank=3,site=quora.com
+$downrank=2,site=reddit.com
+$discard,site=medium.com
