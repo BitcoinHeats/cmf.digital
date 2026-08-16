@@ -6,7 +6,6 @@ import { CONSULTATION_URL } from './constants';
 
 const FOOTER_NAV: { label: string; href: string; external?: boolean }[] = [
   { label: 'Features', href: '#features' },
-  { label: 'Pricing', href: '#pricing' },
   { label: 'Why Bitcoin', href: '#treasury' },
   { label: 'Why AI', href: '#why-cmf' },
   { label: 'Free Consultation', href: CONSULTATION_URL, external: true },
