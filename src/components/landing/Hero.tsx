@@ -41,7 +41,7 @@ export function Hero() {
         </h1>
 
         <p className="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-          <span className="bg-gradient-to-br from-amber-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-br from-amber-400 via-orange-500 to-orange-600 bg-clip-text text-orange-500 [-webkit-text-fill-color:transparent]">
             The future of property management.
           </span>
         </p>
