@@ -74,14 +74,16 @@ export function Navbar() {
               </button>
             </SheetTrigger>
             <SheetContent side="right" className="w-72">
-              <SheetTitle className="px-4 pt-4 text-base">
-                <span className="flex items-center gap-2">
-                  <BrandMark className="size-7" />
-                  <span className="font-bold tracking-tight text-foreground">
-                    CMF<span className="text-orange-500">.digital</span>
-                  </span>
+              {/* Accessible title for screen readers (visually hidden) */}
+              <SheetTitle className="sr-only">CMF.digital navigation menu</SheetTitle>
+
+              {/* Visible brand header */}
+              <div className="flex items-center gap-2 px-4 pt-4 text-base">
+                <BrandMark className="size-7" />
+                <span className="font-bold tracking-tight text-foreground">
+                  CMF<span className="text-orange-500">.digital</span>
                 </span>
-              </SheetTitle>
+              </div>
               <nav className="flex flex-col gap-1 px-2">
                 {NAV_LINKS.map((link) => (
                   <SheetClose asChild key={link.href}>
