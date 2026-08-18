@@ -40,10 +40,8 @@ export function Hero() {
           Community Management Firm
         </h1>
 
-        <p className="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-          <span className="bg-gradient-to-br from-amber-400 via-orange-500 to-orange-600 bg-clip-text text-orange-500 [-webkit-text-fill-color:transparent]">
-            The future of property management.
-          </span>
+        <p className="mt-4 text-3xl font-bold leading-tight tracking-tight text-orange-500 sm:text-4xl sm:bg-gradient-to-br sm:from-amber-400 sm:via-orange-500 sm:to-orange-600 sm:bg-clip-text sm:[-webkit-text-fill-color:transparent]">
+          The future of property management.
         </p>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
