@@ -17,7 +17,7 @@ export function WhoWeAre() {
           <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
             <p>
               CMF.digital was founded by property professionals who lived through
-              the frustration of legacy platforms — bloated pricing, locked-in
+              the frustration of legacy platforms: bloated pricing, locked-in
               dashboards, hidden fees, and zero innovation. We watched the
               property management industry stagnate while AI and Bitcoin
               transformed every other sector.
@@ -55,7 +55,7 @@ export function WhoWeAre() {
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               There's a massive gap between what property managers need and what
               legacy platforms charge for it. CMF closes that gap by building on
-              Bitcoin and AI — not 2010-era SaaS architecture.
+              Bitcoin and AI, not 2010-era SaaS architecture.
             </p>
           </article>
         </div>

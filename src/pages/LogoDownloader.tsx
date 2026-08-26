@@ -23,7 +23,7 @@ const LOGOS: LogoVariant[] = [
     bg: null,
   },
   {
-    name: 'Lockup — Light',
+    name: 'Lockup | Light',
     desc: 'Headers, banners, email signatures',
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400"><defs><linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f7931a"/><stop offset="100%" stop-color="#ea6c00"/></linearGradient></defs><g transform="translate(40 40)"><rect width="320" height="320" rx="80" fill="url(#mark)"/><text x="160" y="160" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="200" font-weight="800" fill="#ffffff">&#8355;</text></g><text x="420" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="140" font-weight="800" fill="#0f172a">CMF<tspan fill="#f7931a">.digital</tspan></text><text x="424" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="500" fill="#64748b" letter-spacing="1">The future of property management.</text></svg>`,
     sizes: [
@@ -33,7 +33,7 @@ const LOGOS: LogoVariant[] = [
     bg: '#ffffff',
   },
   {
-    name: 'Lockup — Dark',
+    name: 'Lockup | Dark',
     desc: 'Dark backgrounds, presentations',
     svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#0b1120"/></linearGradient><linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f7931a"/><stop offset="100%" stop-color="#ea6c00"/></linearGradient><radialGradient id="glow" cx="30%" cy="50%" r="50%"><stop offset="0%" stop-color="#f7931a" stop-opacity="0.15"/><stop offset="100%" stop-color="#f7931a" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="400" rx="24" fill="url(#bg)"/><rect width="1200" height="400" rx="24" fill="url(#glow)"/><g transform="translate(60 40)"><rect width="320" height="320" rx="80" fill="url(#mark)"/><text x="160" y="160" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="200" font-weight="800" fill="#ffffff">&#8355;</text></g><text x="440" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="130" font-weight="800" fill="#f1f5f9">CMF<tspan fill="#f7931a">.digital</tspan></text><text x="444" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" letter-spacing="1">The future of property management.</text></svg>`,
     sizes: [
@@ -103,7 +103,7 @@ function slugify(s: string): string {
 
 export default function LogoDownloader() {
   useSeoMeta({
-    title: 'CMF.digital — Logo Downloads',
+    title: 'CMF.digital | Logo Downloads',
     description: 'Download CMF.digital logo files in PNG format.',
     robots: 'noindex, nofollow',
   });

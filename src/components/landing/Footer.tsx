@@ -26,7 +26,7 @@ export function Footer() {
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               The future of property management. AI agent workflows, Bitcoin
-              payments, mining for heat, and treasury optimization — enterprise
+              payments, mining for heat, and treasury optimization. Enterprise
               capabilities without enterprise lock-in.
             </p>
             <div className="mt-5 flex items-center justify-center gap-3 md:justify-start">

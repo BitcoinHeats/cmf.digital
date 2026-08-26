@@ -466,7 +466,7 @@ const AuthDialog: React.FC<AuthDialogProps> = ({ isOpen, onClose }) => {
                 <p className="text-sm text-muted-foreground">
                   {isGenerating
                     ? 'This only takes a moment.'
-                    : "We'll generate a secret key just for you. Keep it safe — it's the only way to log in."}
+                    : "We'll generate a secret key just for you. Keep it safe. It's the only way to log in."}
                 </p>
               </div>
 

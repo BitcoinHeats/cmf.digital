@@ -11,19 +11,19 @@ import { Footer } from '@/components/landing/Footer';
 
 const Index = () => {
   useSeoMeta({
-    title: 'CMF.digital — The Future of Property Management',
+    title: 'CMF.digital | The Future of Property Management',
     description:
       'AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in. Sovereignty over your assets, operations, and balance sheet.',
-    ogTitle: 'CMF.digital — The Future of Property Management',
+    ogTitle: 'CMF.digital | The Future of Property Management',
     ogDescription:
       'AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in.',
     ogType: 'website',
     ogUrl: 'https://cmf.digital/',
     ogSiteName: 'CMF.digital',
     ogImage: 'https://cmf.digital/og-image.svg',
-    ogImageAlt: 'CMF.digital — The Future of Property Management',
+    ogImageAlt: 'CMF.digital | The Future of Property Management',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'CMF.digital — The Future of Property Management',
+    twitterTitle: 'CMF.digital | The Future of Property Management',
     twitterDescription:
       'AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in.',
     twitterImage: 'https://cmf.digital/og-image.svg',

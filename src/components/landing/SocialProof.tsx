@@ -64,7 +64,7 @@ export function SocialProof() {
             treasury yield."
           </blockquote>
           <figcaption className="mt-5 text-sm text-muted-foreground">
-            — Client Name, Property Type, Portfolio Size
+            Client Name, Property Type, Portfolio Size
           </figcaption>
         </figure>
 

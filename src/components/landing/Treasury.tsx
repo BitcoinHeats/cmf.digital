@@ -45,13 +45,13 @@ const TREASURY_FEATURES: TreasuryFeature[] = [
     icon: Landmark,
     title: 'Borrow Against Your Treasury',
     description:
-      'Unlock the purchasing power of your balance sheet without giving up growing equity value. Fund property improvements, acquisitions, or operations by borrowing against your Bitcoin-backed treasury position — no need to sell appreciating assets.',
+      'Unlock the purchasing power of your balance sheet without giving up growing equity value. Fund property improvements, acquisitions, or operations by borrowing against your Bitcoin-backed treasury position. No need to sell appreciating assets.',
   },
   {
     icon: Boxes,
     title: 'Tailored Vaults',
     description:
-      'Use our tailored vaults strategically designed to fit your corporate needs. Different property types, portfolio sizes, and risk profiles get different treasury structures — not a one-size-fits-all approach.',
+      'Use our tailored vaults strategically designed to fit your corporate needs. Different property types, portfolio sizes, and risk profiles get different treasury structures. Not a one-size-fits-all approach.',
   },
 ];
 
@@ -76,7 +76,7 @@ export function Treasury() {
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
           Create cash flow, gain exposure, earn yield, and borrow against your
-          treasury — all from one platform.
+          treasury. All from one platform.
         </p>
       </div>
 
@@ -90,7 +90,7 @@ export function Treasury() {
         </p>
         <p>
           CMF changes that. Your treasury becomes an active revenue generator
-          using Bitcoin-backed strategies — with principal protection built in.
+          using Bitcoin-backed strategies with principal protection built in.
         </p>
       </div>
 
@@ -114,7 +114,7 @@ function FlowDiagram() {
       {/* Upside label */}
       <div className="mb-4 flex items-center justify-center gap-2 text-xs font-medium text-orange-500">
         <TrendingUp className="size-4" />
-        Bitcoin Appreciation — your upside
+        Bitcoin Appreciation | your upside
       </div>
 
       {/* Flow row */}
@@ -141,7 +141,7 @@ function FlowDiagram() {
       {/* Floor label */}
       <div className="mt-4 flex items-center justify-center gap-2 text-xs font-medium text-emerald-500">
         <ShieldCheck className="size-4" />
-        Principal Protection — your floor
+        Principal Protection | your floor
       </div>
     </div>
   );

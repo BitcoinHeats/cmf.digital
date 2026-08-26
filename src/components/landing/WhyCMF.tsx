@@ -13,14 +13,14 @@ const REASONS: Reason[] = [
     icon: ShieldCheck,
     title: 'Sovereignty',
     description:
-      'You own your data. You own your payments. You own your infrastructure. You own your treasury. No centralized platform can lock you out, freeze your funds, or hold your operations hostage. CMF is built on Bitcoin and decentralized infrastructure — you stay in control.',
+      'You own your data. You own your payments. You own your infrastructure. You own your treasury. No centralized platform can lock you out, freeze your funds, or hold your operations hostage. CMF is built on Bitcoin and decentralized infrastructure. You stay in control.',
     iconClass: 'bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-orange-500/30',
   },
   {
     icon: Gauge,
     title: 'Efficiency',
     description:
-      'AI agents operate 24/7 without human bottlenecks. Routine workflows — tenant communications, rent collection, maintenance dispatch, financial reconciliation — happen automatically. Your labor costs drop. Your response times improve. Your portfolio scales without scaling headcount.',
+      'AI agents operate 24/7 without human bottlenecks. Routine workflows (tenant communications, rent collection, maintenance dispatch, financial reconciliation) happen automatically. Your labor costs drop. Your response times improve. Your portfolio scales without scaling headcount.',
     iconClass: 'bg-indigo-500/15 text-indigo-500',
   },
   {

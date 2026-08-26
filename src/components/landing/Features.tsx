@@ -16,14 +16,14 @@ const FEATURES: Feature[] = [
     icon: Bot,
     title: 'AI Agent Workflows',
     description:
-      'Autonomous AI agents handle tenant communications, rent reminders, maintenance dispatch, vendor management, financial reconciliation, and reporting — 24/7, without human bottlenecks. Your team stops doing busywork and starts focusing on strategy.',
+      'Autonomous AI agents handle tenant communications, rent reminders, maintenance dispatch, vendor management, financial reconciliation, and reporting 24/7, without human bottlenecks. Your team stops doing busywork and starts focusing on strategy.',
     span: 'lg:col-span-2',
   },
   {
     icon: Flame,
     title: 'Bitcoin Mining for Heat',
     description:
-      "Turn your biggest liability — heating costs — into a revenue-generating asset. Mining rigs heat common areas, units, and water systems while generating Bitcoin. You offset operating expenses with mined BTC instead of paying utility companies.",
+      "Turn your biggest liability (heating costs) into a revenue-generating asset. Mining rigs heat common areas, units, and water systems while generating Bitcoin. You offset operating expenses with mined BTC instead of paying utility companies.",
     span: 'lg:col-span-2',
   },
   {
@@ -37,14 +37,14 @@ const FEATURES: Feature[] = [
     icon: Server,
     title: 'Independent Platform',
     description:
-      'CMF runs on decentralized infrastructure — not a centralized dashboard you don\'t control. Your data, your payments, your operations. No platform lock-in. No vendor dependency. Your web presence and service layer are yours.',
+      'CMF runs on decentralized infrastructure, not a centralized dashboard you don\'t control. Your data, your payments, your operations. No platform lock-in. No vendor dependency. Your web presence and service layer are yours.',
     span: 'lg:col-span-3',
   },
   {
     icon: Landmark,
     title: 'Bitcoin-Powered Treasury',
     description:
-      "Your reserves and escrow holdings shouldn't sit idle. CMF deploys Bitcoin-backed treasury strategies that create cash flow, earn yield, and enable borrowing — all with principal protection. Your balance sheet works for you instead of depreciating in a checking account.",
+      "Your reserves and escrow holdings shouldn't sit idle. CMF deploys Bitcoin-backed treasury strategies that create cash flow, earn yield, and enable borrowing, all with principal protection. Your balance sheet works for you instead of depreciating in a checking account.",
     span: 'lg:col-span-3',
   },
 ];
