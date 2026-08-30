@@ -8,7 +8,7 @@ const FOOTER_NAV: { label: string; href: string; external?: boolean }[] = [
   { label: 'Features', href: '#features' },
   { label: 'Why Bitcoin', href: '#treasury' },
   { label: 'Why AI', href: '#why-cmf' },
-  { label: 'Free Consultation', href: CONSULTATION_URL, external: true },
+  { label: 'Consultation', href: CONSULTATION_URL, external: true },
 ];
 
 export function Footer() {

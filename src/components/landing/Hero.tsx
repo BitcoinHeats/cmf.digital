@@ -57,7 +57,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="inline-flex h-12 items-center gap-2 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 px-7 text-base font-semibold text-white shadow-lg shadow-orange-500/40 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-orange-500/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
-            Free Consultation
+            Consultation
             <ArrowRight className="size-4" />
           </a>
           <a
