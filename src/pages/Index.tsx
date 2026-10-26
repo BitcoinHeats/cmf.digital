@@ -1,31 +1,28 @@
 import { useSeoMeta } from '@unhead/react';
 import { Navbar } from '@/components/landing/Navbar';
 import { Hero } from '@/components/landing/Hero';
-import { WhoWeAre } from '@/components/landing/WhoWeAre';
-import { Features } from '@/components/landing/Features';
-import { WhyCMF } from '@/components/landing/WhyCMF';
-import { Treasury } from '@/components/landing/Treasury';
-import { SocialProof } from '@/components/landing/SocialProof';
-import { CTA } from '@/components/landing/CTA';
+import { KeyServices } from '@/components/landing/KeyServices';
+import { About } from '@/components/landing/About';
+import { Contact } from '@/components/landing/Contact';
 import { Footer } from '@/components/landing/Footer';
 
 const Index = () => {
   useSeoMeta({
-    title: 'CMF.digital | The Future of Property Management',
+    title: 'CMF.digital | Transforming Business Operations Through Digital Innovation',
     description:
-      'AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in. Sovereignty over your assets, operations, and balance sheet.',
-    ogTitle: 'CMF.digital | The Future of Property Management',
+      'Seamless digital transactions and intelligent AI workflows for modern businesses. Digital transformation, AI solutions, transaction processing, and workflow automation.',
+    ogTitle: 'CMF.digital | Transforming Business Operations Through Digital Innovation',
     ogDescription:
-      'AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in.',
+      'Seamless digital transactions and intelligent AI workflows for modern businesses.',
     ogType: 'website',
     ogUrl: 'https://cmf.digital/',
     ogSiteName: 'CMF.digital',
     ogImage: 'https://cmf.digital/og-image.svg',
-    ogImageAlt: 'CMF.digital | The Future of Property Management',
+    ogImageAlt: 'CMF.digital | Transforming Business Operations',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'CMF.digital | The Future of Property Management',
+    twitterTitle: 'CMF.digital | Transforming Business Operations Through Digital Innovation',
     twitterDescription:
-      'AI agent workflows. Bitcoin payments. Mining for heat. Treasury optimization. Enterprise capabilities without enterprise lock-in.',
+      'Seamless digital transactions and intelligent AI workflows for modern businesses.',
     twitterImage: 'https://cmf.digital/og-image.svg',
   });
 
@@ -34,12 +31,9 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
-        <WhoWeAre />
-        <Features />
-        <WhyCMF />
-        <Treasury />
-        <SocialProof />
-        <CTA />
+        <KeyServices />
+        <About />
+        <Contact />
       </main>
       <Footer />
     </div>

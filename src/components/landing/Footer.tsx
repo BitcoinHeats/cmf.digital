@@ -1,13 +1,15 @@
 import { Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { BrandMark } from './BrandMark';
-import { BitcoinMark } from './BitcoinMark';
 import { CONSULTATION_URL } from './constants';
 
 const FOOTER_NAV: { label: string; href: string; external?: boolean }[] = [
-  { label: 'Features', href: '#features' },
-  { label: 'Why Bitcoin', href: '#treasury' },
-  { label: 'Why AI', href: '#why-cmf' },
+  { label: 'Home', href: '/' },
+  { label: 'Digital Transactions', href: '/services/digital-transactions' },
+  { label: 'AI Workflows', href: '/services/ai-workflows' },
+  { label: 'Industries', href: '/services/industries' },
+  { label: 'About', href: '/#about' },
+  { label: 'Contact', href: '/#contact' },
   { label: 'Consultation', href: CONSULTATION_URL, external: true },
 ];
 
@@ -19,24 +21,16 @@ export function Footer() {
           {/* Brand */}
           <div className="max-w-sm text-center md:text-left">
             <Link to="/" className="flex items-center justify-center gap-2 md:justify-start" aria-label="CMF.digital home">
-              <BrandMark className="size-8" />
+              <BrandMark className="size-8 text-[11px]" />
               <span className="text-lg font-bold tracking-tight text-foreground">
-                CMF<span className="text-orange-500">.digital</span>
+                CMF<span className="text-blue-600">.digital</span>
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              The future of property management. AI agent workflows, Bitcoin
-              payments, mining for heat, and treasury optimization. Enterprise
-              capabilities without enterprise lock-in.
+              Transforming business operations through digital innovation.
+              Seamless digital transactions and intelligent AI workflows for
+              modern businesses.
             </p>
-            <div className="mt-5 flex items-center justify-center gap-3 md:justify-start">
-              <span
-                aria-hidden
-                className="flex size-9 items-center justify-center rounded-full border border-orange-500/30 bg-orange-500/10 text-orange-500"
-              >
-                <BitcoinMark className="size-4" />
-              </span>
-            </div>
           </div>
 
           {/* Nav */}
@@ -44,15 +38,22 @@ export function Footer() {
             <ul className="flex flex-col items-center gap-3 md:items-start">
               {FOOTER_NAV.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
-                    {...(link.external
-                      ? { target: '_blank', rel: 'noopener noreferrer' }
-                      : {})}
-                    className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </a>
+                  {link.href.startsWith('/') && !link.external ? (
+                    <Link
+                      to={link.href}
+                      className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

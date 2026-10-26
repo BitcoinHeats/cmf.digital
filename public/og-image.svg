@@ -2,49 +2,31 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
     </linearGradient>
     <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f7931a"/>
-      <stop offset="100%" stop-color="#ea6c00"/>
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#fbbf24"/>
-      <stop offset="100%" stop-color="#f7931a"/>
-    </linearGradient>
-    <radialGradient id="glow1" cx="50%" cy="0%" r="60%">
-      <stop offset="0%" stop-color="#f7931a" stop-opacity="0.28"/>
-      <stop offset="100%" stop-color="#f7931a" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow2" cx="85%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    <radialGradient id="glow" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
   </defs>
-
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#glow1)"/>
-  <rect width="1200" height="630" fill="url(#glow2)"/>
-
-  <!-- Logo mark -->
+  <rect width="1200" height="630" fill="url(#glow)"/>
   <g transform="translate(96 110)">
     <rect width="84" height="84" rx="22" fill="url(#brand)"/>
-    <text x="42" y="44" text-anchor="middle" dominant-baseline="central"
-          font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="800" fill="#ffffff">&#8355;</text>
+    <text x="42" y="44" text-anchor="middle" dominant-baseline="central" font-family="system-ui, sans-serif" font-size="26" font-weight="800" fill="#ffffff">CMF</text>
   </g>
-  <text x="200" y="172" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#f1f5f9">CMF<tspan fill="#f7931a">.digital</tspan></text>
-
-  <!-- Headline -->
-  <text x="96" y="330" font-family="Inter, system-ui, sans-serif" font-size="78" font-weight="800" fill="#f1f5f9">The future of</text>
-  <text x="96" y="420" font-family="Inter, system-ui, sans-serif" font-size="78" font-weight="800" fill="url(#accent)">property management.</text>
-
-  <!-- Subtitle -->
-  <text x="96" y="478" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="400" fill="#94a3b8">AI agents. Bitcoin payments. Mining for heat. Treasury optimization.</text>
-
-  <!-- URL chip -->
-  <g transform="translate(96 520)">
-    <rect width="200" height="52" rx="26" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-    <circle cx="30" cy="26" r="6" fill="#f7931a"/>
-    <text x="50" y="34" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="600" fill="#e2e8f0">cmf.digital</text>
+  <text x="200" y="172" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#f1f5f9">CMF<tspan fill="#3b82f6">.digital</tspan></text>
+  <text x="96" y="320" font-family="Inter, system-ui, sans-serif" font-size="68" font-weight="800" fill="#f1f5f9">Transforming Business</text>
+  <text x="96" y="395" font-family="Inter, system-ui, sans-serif" font-size="68" font-weight="800" fill="url(#brand)">Operations Through</text>
+  <text x="96" y="470" font-family="Inter, system-ui, sans-serif" font-size="68" font-weight="800" fill="url(#brand)">Digital Innovation</text>
+  <text x="96" y="540" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="400" fill="#94a3b8">Seamless Digital Transactions &amp; Intelligent AI Workflows</text>
+  <g transform="translate(96 570)">
+    <rect width="220" height="52" rx="26" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="30" cy="26" r="6" fill="#3b82f6"/>
+    <text x="50" y="34" font-family="Inter, sans-serif" font-size="22" font-weight="600" fill="#e2e8f0">cmf.digital</text>
   </g>
 </svg>
