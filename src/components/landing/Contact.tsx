@@ -1,16 +1,6 @@
 import { useState } from 'react';
-import { Mail, MapPin, Phone, Send, Check } from 'lucide-react';
+import { Send, Check } from 'lucide-react';
 import { CONSULTATION_URL } from './constants';
-
-const CONTACT_INFO = [
-  { icon: Phone, label: 'Phone', value: '+1 (555) 123-4567', href: 'tel:+15551234567' },
-  { icon: Mail, label: 'Email', value: 'contact@cmf.digital', href: 'mailto:contact@cmf.digital' },
-] as const;
-
-const OFFICES = [
-  { city: 'Headquarters', address: '123 Innovation Drive, Suite 400, San Francisco, CA 94105' },
-  { city: 'East Coast', address: '456 Tech Boulevard, Floor 12, New York, NY 10001' },
-] as const;
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -108,9 +98,8 @@ export function Contact() {
           )}
         </div>
 
-        {/* Contact info + consultation */}
-        <div className="flex flex-col gap-5">
-          {/* Consultation CTA */}
+        {/* Consultation CTA */}
+        <div className="flex flex-col">
           <a
             href={CONSULTATION_URL}
             target="_blank"
@@ -128,49 +117,6 @@ export function Contact() {
               <Send className="size-4 transition-transform group-hover:translate-x-1" />
             </span>
           </a>
-
-          {/* Contact details */}
-          <div className="rounded-2xl border border-border/70 bg-card p-7">
-            <h3 className="text-lg font-semibold text-foreground">Get in touch</h3>
-            <div className="mt-5 space-y-4">
-              {CONTACT_INFO.map((info) => {
-                const { icon: Icon, label, value, href } = info;
-                return (
-                  <a
-                    key={label}
-                    href={href}
-                    className="flex items-center gap-3 text-sm transition-colors hover:text-blue-600"
-                  >
-                    <span className="flex size-10 items-center justify-center rounded-lg bg-blue-500/15 text-blue-600">
-                      <Icon className="size-5" />
-                    </span>
-                    <div>
-                      <p className="text-xs uppercase tracking-wider text-muted-foreground">{label}</p>
-                      <p className="font-medium text-foreground">{value}</p>
-                    </div>
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Office locations */}
-          <div className="rounded-2xl border border-border/70 bg-card p-7">
-            <h3 className="text-lg font-semibold text-foreground">Office Locations</h3>
-            <div className="mt-5 space-y-4">
-              {OFFICES.map((office) => (
-                <div key={office.city} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-lg bg-blue-500/15 text-blue-600">
-                    <MapPin className="size-5" />
-                  </span>
-                  <div>
-                    <p className="font-medium text-foreground">{office.city}</p>
-                    <p className="text-sm text-muted-foreground">{office.address}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
