@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, Menu } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { LoginArea } from '@/components/auth/LoginArea';
 import { ThemeToggle } from './ThemeToggle';
 import { BrandWordmark, BrandMark } from './BrandMark';
 import {
@@ -88,7 +87,6 @@ export function Navbar() {
           >
             Consultation
           </a>
-          <LoginArea className="max-w-40" />
         </div>
 
         {/* Mobile actions */}
@@ -151,9 +149,6 @@ export function Navbar() {
                   </a>
                 </SheetClose>
               </nav>
-              <div className="mt-auto border-t border-border/60 p-4">
-                <LoginArea className="w-full" />
-              </div>
             </SheetContent>
           </Sheet>
         </div>
