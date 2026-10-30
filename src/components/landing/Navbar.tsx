@@ -17,6 +17,7 @@ const SERVICES = [
   { label: 'Digital Transactions', href: '/services/digital-transactions' },
   { label: 'AI Workflow Solutions', href: '/services/ai-workflows' },
   { label: 'Industry Solutions', href: '/services/industries' },
+  { label: 'Bitcoin Treasury', href: '/services/bitcoin-treasury' },
 ] as const;
 
 const NAV_LINKS = [

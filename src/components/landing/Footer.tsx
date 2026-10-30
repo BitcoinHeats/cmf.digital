@@ -8,6 +8,7 @@ const FOOTER_NAV: { label: string; href: string; external?: boolean }[] = [
   { label: 'Digital Transactions', href: '/services/digital-transactions' },
   { label: 'AI Workflows', href: '/services/ai-workflows' },
   { label: 'Industries', href: '/services/industries' },
+  { label: 'Bitcoin Treasury', href: '/services/bitcoin-treasury' },
   { label: 'About', href: '/#about' },
   { label: 'Contact', href: '/#contact' },
   { label: 'Consultation', href: CONSULTATION_URL, external: true },

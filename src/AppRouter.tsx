@@ -5,6 +5,7 @@ import Index from "./pages/Index";
 import DigitalTransactionsPage from "./pages/DigitalTransactions";
 import AIWorkflowsPage from "./pages/AIWorkflows";
 import IndustriesPage from "./pages/Industries";
+import BitcoinTreasuryPage from "./pages/BitcoinTreasury";
 import LogoDownloader from "./pages/LogoDownloader";
 import { NIP19Page } from "./pages/NIP19Page";
 import NotFound from "./pages/NotFound";
@@ -18,6 +19,7 @@ export function AppRouter() {
         <Route path="/services/digital-transactions" element={<DigitalTransactionsPage />} />
         <Route path="/services/ai-workflows" element={<AIWorkflowsPage />} />
         <Route path="/services/industries" element={<IndustriesPage />} />
+        <Route path="/services/bitcoin-treasury" element={<BitcoinTreasuryPage />} />
         <Route path="/logos" element={<LogoDownloader />} />
         {/* NIP-19 route for npub1, note1, naddr1, nevent1, nprofile1 */}
         <Route path="/:nip19" element={<NIP19Page />} />
