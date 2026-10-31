@@ -1,5 +1,6 @@
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { CONSULTATION_URL } from './constants';
+import { BitcoinIcon } from './KeyServices';
 
 const STATS = [
   { value: '24/7', label: 'Automated workflows' },
@@ -30,8 +31,8 @@ export function Hero() {
 
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
         <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/60 px-4 py-1.5 text-sm text-muted-foreground backdrop-blur">
-          <Sparkles className="size-4 text-blue-500" />
-          <span>Digital Transactions &amp; AI Workflows</span>
+          <BitcoinIcon className="size-4 text-orange-500" />
+          <span>A Bitcoin sovereign company</span>
         </div>
 
         <h1 className="mt-6 text-5xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-7xl lg:text-8xl">
