@@ -34,12 +34,13 @@ export function Hero() {
           <span>Digital Transactions &amp; AI Workflows</span>
         </div>
 
-        <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-          Transforming Business Operations Through{' '}
-          <span className="text-blue-600 sm:bg-gradient-to-br sm:from-blue-500 sm:to-cyan-500 sm:bg-clip-text sm:[-webkit-text-fill-color:transparent]">
-            Digital Innovation
-          </span>
+        <h1 className="mt-6 text-5xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-7xl lg:text-8xl">
+          Community Management Firm
         </h1>
+
+        <h2 className="mt-4 text-xl font-bold leading-tight tracking-tight text-blue-600 sm:text-3xl sm:bg-gradient-to-br sm:from-blue-500 sm:to-cyan-500 sm:bg-clip-text sm:[-webkit-text-fill-color:transparent]">
+          Transforming Business Operations Through Digital Innovation
+        </h2>
 
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
