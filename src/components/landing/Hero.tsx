@@ -31,7 +31,7 @@ export function Hero() {
 
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
         <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/60 px-4 py-1.5 text-sm text-muted-foreground backdrop-blur">
-          <BitcoinIcon className="size-4 text-orange-500" />
+          <BitcoinIcon className="size-5 text-orange-500" />
           <span>A Bitcoin sovereign company</span>
         </div>
 
