@@ -10,35 +10,44 @@ interface LogoVariant {
   bg: string | null;
 }
 
+const SQUARE_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#1d4ed8"/></linearGradient></defs><rect width="512" height="512" rx="128" fill="url(#g)"/><text x="256" y="256" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="150" font-weight="800" fill="#ffffff">CMF</text></svg>`;
+
+const LOCKUP_LIGHT_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400"><defs><linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#1d4ed8"/></linearGradient></defs><g transform="translate(40 40)"><rect width="320" height="320" rx="80" fill="url(#mark)"/><text x="160" y="160" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="90" font-weight="800" fill="#ffffff">CMF</text></g><text x="420" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="130" font-weight="800" fill="#0f172a">CMF<tspan fill="#1d4ed8">.digital</tspan></text><text x="424" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="500" fill="#64748b" letter-spacing="1">Transforming Business Operations</text></svg>`;
+
+const LOCKUP_DARK_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e3a5f"/></linearGradient><linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#1d4ed8"/></linearGradient><radialGradient id="glow" cx="30%" cy="50%" r="50%"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.15"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="400" rx="24" fill="url(#bg)"/><rect width="1200" height="400" rx="24" fill="url(#glow)"/><g transform="translate(60 40)"><rect width="320" height="320" rx="80" fill="url(#mark)"/><text x="160" y="160" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="90" font-weight="800" fill="#ffffff">CMF</text></g><text x="440" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="120" font-weight="800" fill="#f1f5f9">CMF<tspan fill="#3b82f6">.digital</tspan></text><text x="444" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" letter-spacing="1">Transforming Business Operations</text></svg>`;
+
 const LOGOS: LogoVariant[] = [
   {
     name: 'Square Icon',
     desc: 'Profile pictures, avatars, app icons',
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f7931a"/><stop offset="100%" stop-color="#ea6c00"/></linearGradient></defs><rect width="512" height="512" rx="128" fill="url(#g)"/><text x="256" y="256" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="320" font-weight="800" fill="#ffffff">&#8355;</text></svg>`,
+    svg: SQUARE_SVG,
     sizes: [
+      { width: 8192, height: 8192 },
+      { width: 4096, height: 4096 },
+      { width: 2048, height: 2048 },
       { width: 512, height: 512 },
-      { width: 256, height: 256 },
-      { width: 128, height: 128 },
     ],
     bg: null,
   },
   {
     name: 'Lockup | Light',
     desc: 'Headers, banners, email signatures',
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400"><defs><linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f7931a"/><stop offset="100%" stop-color="#ea6c00"/></linearGradient></defs><g transform="translate(40 40)"><rect width="320" height="320" rx="80" fill="url(#mark)"/><text x="160" y="160" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="200" font-weight="800" fill="#ffffff">&#8355;</text></g><text x="420" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="140" font-weight="800" fill="#0f172a">CMF<tspan fill="#f7931a">.digital</tspan></text><text x="424" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="500" fill="#64748b" letter-spacing="1">The future of property management.</text></svg>`,
+    svg: LOCKUP_LIGHT_SVG,
     sizes: [
+      { width: 4800, height: 1600 },
+      { width: 2400, height: 800 },
       { width: 1200, height: 400 },
-      { width: 600, height: 200 },
     ],
     bg: '#ffffff',
   },
   {
     name: 'Lockup | Dark',
     desc: 'Dark backgrounds, presentations',
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#0b1120"/></linearGradient><linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f7931a"/><stop offset="100%" stop-color="#ea6c00"/></linearGradient><radialGradient id="glow" cx="30%" cy="50%" r="50%"><stop offset="0%" stop-color="#f7931a" stop-opacity="0.15"/><stop offset="100%" stop-color="#f7931a" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="400" rx="24" fill="url(#bg)"/><rect width="1200" height="400" rx="24" fill="url(#glow)"/><g transform="translate(60 40)"><rect width="320" height="320" rx="80" fill="url(#mark)"/><text x="160" y="160" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="200" font-weight="800" fill="#ffffff">&#8355;</text></g><text x="440" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="130" font-weight="800" fill="#f1f5f9">CMF<tspan fill="#f7931a">.digital</tspan></text><text x="444" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="500" fill="#94a3b8" letter-spacing="1">The future of property management.</text></svg>`,
+    svg: LOCKUP_DARK_SVG,
     sizes: [
+      { width: 4800, height: 1600 },
+      { width: 2400, height: 800 },
       { width: 1200, height: 400 },
-      { width: 600, height: 200 },
     ],
     bg: '#0f172a',
   },
@@ -101,6 +110,12 @@ function slugify(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
+function formatSize(bytes: number): string {
+  if (bytes >= 1048576) return `${(bytes / 1048576).toFixed(1)} MB`;
+  if (bytes >= 1024) return `${(bytes / 1024).toFixed(0)} KB`;
+  return `${bytes} B`;
+}
+
 export default function LogoDownloader() {
   useSeoMeta({
     title: 'CMF.digital | Logo Downloads',
@@ -110,12 +125,14 @@ export default function LogoDownloader() {
 
   const [downloading, setDownloading] = useState<string | null>(null);
   const [done, setDone] = useState<string | null>(null);
+  const [fileInfo, setFileInfo] = useState<string | null>(null);
 
   const handleDownload = useCallback(
     async (logo: LogoVariant, size: { width: number; height: number }) => {
       const key = `${logo.name}-${size.width}`;
       setDownloading(key);
       setDone(null);
+      setFileInfo(null);
       try {
         const png = await svgToPng(
           logo.svg,
@@ -125,6 +142,7 @@ export default function LogoDownloader() {
         );
         const filename = `cmf-digital-${slugify(logo.name)}-${size.width}.png`;
         triggerDownload(png, filename);
+        setFileInfo(`${filename} (${formatSize(png.size)})`);
         setDone(key);
       } catch {
         // ignore
@@ -138,6 +156,7 @@ export default function LogoDownloader() {
   const handleDownloadAll = useCallback(async (logo: LogoVariant) => {
     setDownloading(`${logo.name}-all`);
     setDone(null);
+    setFileInfo(null);
     try {
       for (const size of logo.sizes) {
         const png = await svgToPng(
@@ -166,7 +185,7 @@ export default function LogoDownloader() {
             CMF.digital Logo Downloads
           </h1>
           <p className="mt-3 text-lg text-muted-foreground">
-            Click a button to download each logo as a PNG file.
+            Download high-resolution PNG files. Large sizes may take a moment to generate.
           </p>
         </div>
 
@@ -200,7 +219,7 @@ export default function LogoDownloader() {
                       type="button"
                       onClick={() => handleDownload(logo, size)}
                       disabled={isDownloading}
-                      className="inline-flex h-9 items-center gap-2 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 px-4 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-all hover:-translate-y-0.5 disabled:opacity-50"
+                      className="inline-flex h-9 items-center gap-2 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 px-4 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 transition-all hover:-translate-y-0.5 disabled:opacity-50"
                     >
                       {isDownloading ? (
                         <Loader2 className="size-4 animate-spin" />
@@ -209,7 +228,7 @@ export default function LogoDownloader() {
                       ) : (
                         <Download className="size-4" />
                       )}
-                      PNG {size.width}
+                      {size.width}px
                     </button>
                   );
                 })}
@@ -220,7 +239,7 @@ export default function LogoDownloader() {
                 type="button"
                 onClick={() => handleDownloadAll(logo)}
                 disabled={downloading === `${logo.name}-all`}
-                className="inline-flex h-9 w-full items-center justify-center gap-2 rounded-lg border border-border bg-background px-4 text-sm font-semibold text-foreground transition-all hover:border-orange-500/50 disabled:opacity-50"
+                className="inline-flex h-9 w-full items-center justify-center gap-2 rounded-lg border border-border bg-background px-4 text-sm font-semibold text-foreground transition-all hover:border-blue-500/50 disabled:opacity-50"
               >
                 {downloading === `${logo.name}-all` ? (
                   <Loader2 className="size-4 animate-spin" />
@@ -231,6 +250,11 @@ export default function LogoDownloader() {
                 )}
                 Download All Sizes
               </button>
+
+              {/* File info */}
+              {done === `${logo.name}-${logo.sizes[0].width}` && fileInfo && (
+                <p className="text-xs text-muted-foreground">{fileInfo}</p>
+              )}
             </div>
           ))}
         </div>
