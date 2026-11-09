@@ -87,6 +87,16 @@
     </head>
     <body>
         <div id="root"></div>
+
+        <!-- Netlify Forms detection form (hidden, required for React SPA form detection) -->
+        <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <input type="text" name="company" />
+            <textarea name="message"></textarea>
+        </form>
+
         <script type="module" src="/src/main.tsx"></script>
     </body>
 </html>

@@ -3,11 +3,34 @@ import { Send, Check } from 'lucide-react';
 import { CONSULTATION_URL } from './constants';
 
 export function Contact() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>(
+    'idle',
+  );
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    // Netlify Forms requires the form-name field
+    const body = new URLSearchParams({
+      'form-name': 'contact',
+      ...Object.fromEntries(data.entries()),
+    }).toString();
+
+    setStatus('sending');
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
+      });
+      if (!response.ok) throw new Error('Submission failed');
+      setStatus('sent');
+      form.reset();
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -28,7 +51,7 @@ export function Contact() {
         {/* Contact form */}
         <div className="rounded-2xl border border-border/70 bg-card p-7">
           <h3 className="text-lg font-semibold text-foreground">Send us a message</h3>
-          {submitted ? (
+          {status === 'sent' ? (
             <div className="mt-6 flex flex-col items-center justify-center gap-3 py-12 text-center">
               <div className="flex size-12 items-center justify-center rounded-full bg-blue-500/15 text-blue-600">
                 <Check className="size-6" />
@@ -36,8 +59,37 @@ export function Contact() {
               <p className="text-base font-medium text-foreground">Message sent!</p>
               <p className="text-sm text-muted-foreground">We'll get back to you within 24 hours.</p>
             </div>
+          ) : status === 'error' ? (
+            <div className="mt-6 flex flex-col items-center justify-center gap-3 py-12 text-center">
+              <div className="flex size-12 items-center justify-center rounded-full bg-red-500/15 text-red-600">
+                <Send className="size-6" />
+              </div>
+              <p className="text-base font-medium text-foreground">Something went wrong.</p>
+              <p className="text-sm text-muted-foreground">Please email us directly at contact@cmf.digital.</p>
+              <button
+                type="button"
+                onClick={() => setStatus('idle')}
+                className="mt-2 text-sm font-semibold text-blue-600 hover:text-blue-500"
+              >
+                Try again
+              </button>
+            </div>
           ) : (
-            <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              className="mt-6 space-y-4"
+            >
+              {/* Hidden fields for Netlify Forms */}
+              <input type="hidden" name="form-name" value="contact" />
+              <p className="hidden">
+                <label>
+                  Don't fill this out: <input name="bot-field" />
+                </label>
+              </p>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground">
@@ -89,10 +141,20 @@ export function Contact() {
               </div>
               <button
                 type="submit"
-                className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 transition-all hover:-translate-y-0.5 hover:shadow-blue-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                disabled={status === 'sending'}
+                className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 transition-all hover:-translate-y-0.5 hover:shadow-blue-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-60"
               >
-                <Send className="size-4" />
-                Send Message
+                {status === 'sending' ? (
+                  <>
+                    <span className="size-4 animate-spin rounded-full border-2 border-white/40 border-t-white" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send className="size-4" />
+                    Send Message
+                  </>
+                )}
               </button>
             </form>
           )}
